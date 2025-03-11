@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Afrik'Up Documentation</title>
+    <style>
+        :root {
+            --primary-color: #f97316;
+            --text-color: #333;
+            --background-color: #fff;
+            --sidebar-background: #f8f9fa;
+            --sidebar-width: 250px;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--background-color);
+        }
+
+        .container {
+            display: flex;
+            min-height: 100vh;
+        }
+
+        .sidebar {
+            width: var(--sidebar-width);
+            background-color: var(--sidebar-background);
+            padding: 2rem;
+            overflow-y: auto;
+            position: fixed;
+            top: 0;
+            left: 0;
+            bottom: 0;
+        }
+
+        .sidebar h2 {
+            margin-bottom: 1rem;
+            color: var(--primary-color);
+        }
+
+        .sidebar ul {
+            list-style-type: none;
+        }
+
+        .sidebar li {
+            margin-bottom: 0.5rem;
+        }
+
+        .sidebar a {
+            color: var(--text-color);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .sidebar a:hover {
+            color: var(--primary-color);
+        }
+
+        .content {
+            flex: 1;
+            padding: 2rem;
+            margin-left: var(--sidebar-width);
+        }
+
+        .content h1 {
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+
+        .content-image {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 1rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .section {
+            margin-bottom: 2rem;
+        }
+
+        .section h2 {
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+
+            .sidebar {
+                width: 100%;
+                position: static;
+                padding: 1rem;
+            }
+
+            .content {
+                margin-left: 0;
+                padding: 1rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <h2>Table of Contents</h2>
+            <ul>
+                <li><a href="#introduction">Introduction</a></li>
+                <li><a href="#sefa-program">SEFA Program</a></li>
+                <li><a href="#empower-her">EmpowerHer</a></li>
+                <li><a href="#starting-business">Starting a Business</a></li>
+                <li><a href="#partnership">Partnership</a></li>
+            </ul>
+        </aside>
+        <main class="content">
+            <h1>Afrik'Up Programs</h1>
+            <img src="https://via.placeholder.com/800x400" alt="Afrik'Up Programs" class="content-image">
+
+            <section id="introduction" class="section">
+                <h2>Introduction</h2>
+                <p>Afrik'Up is dedicated to unlocking the potential of African women as leaders, entrepreneurs, and
+                    change-makers. Our programs are designed to support women in developing their skills, achieving
+                    financial independence, and creating opportunities through a strong and structured network.</p>
+            </section>
+
+            <section id="sefa-program" class="section">
+                <h2>SEFA Program</h2>
+                <p>SEFA: The University of Entrepreneurship and Personal Success is a structured pathway that guides
+                    women through each stage of their transformation, from self-discovery to leadership.</p>
+                <ul>
+                    <li>BAC SEFA – GENESIS: Self-Discovery and Initiation (2 months)</li>
+                    <li>BTS SEFA – IMPULSION: Launching a Project (3 months)</li>
+                    <li>LICENCE SEFA – ASCENSION: Building a Sustainable Business (6 months)</li>
+                    <li>MASTER SEFA – APOTHEOSIS: Becoming a Leader and Industry Influencer (1 year)</li>
+                </ul>
+            </section>
+
+            <section id="empower-her" class="section">
+                <h2>EmpowerHer</h2>
+                <p>EmpowerHer is a community-driven initiative that supports women through annual cycles focused on
+                    leadership, economic empowerment, well-being, and gender equality.</p>
+            </section>
+
+            <section id="starting-business" class="section">
+                <h2>Starting a Business in 2025 with 100,000 FCFA</h2>
+                <p>This innovative program allows participants to launch a profitable project with a minimal initial
+                    investment of 100,000 FCFA, benefiting from six months of coaching and support.</p>
+            </section>
+
+            <section id="partnership" class="section">
+                <h2>Partnership Opportunities</h2>
+                <p>Partner with Afrik'Up to actively contribute to the empowerment of African women, demonstrate your
+                    social impact, join a dynamic network of African leaders and entrepreneurs, and be part of an
+                    ambitious project with significant growth and impact potential.</p>
+            </section>
+        </main>
+    </div>
+</body>
+
+</html>
